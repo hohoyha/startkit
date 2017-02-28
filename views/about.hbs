@@ -1,0 +1,11 @@
+<ul>
+    {{#each tours}}
+    {{! I'm in a new block }}
+    <li>
+        {{name}} - {{price}}
+        {{#if ../test}}
+            ({{ ../../currency.abbrev }})
+        {{/if}}
+    </li>
+    {{/each}}
+</ul>
